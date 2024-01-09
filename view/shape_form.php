@@ -8,7 +8,7 @@ if (!isset($_GET['shape']) || empty($_GET['shape'])) {
 $shape_type = $_GET['shape'];
 
 
-echo "<form action='../proc/calculate_shape.php' method='POST'>";
+echo "<form id='shape-form' class='shape-form-container' action='../proc/calculate_shape.php' method='POST'>";
 
 if ($shape_type == 'triangulo') {
     echo "
@@ -34,5 +34,7 @@ if ($shape_type == 'triangulo') {
 }
 
 echo "<input type='hidden' name='shape' value='$shape_type'>";
-echo "<input type='submit' value='Calcular'>";
+echo "<input id='calculate-btn' type='button' value='Calcular'>";
+echo "<label id='area-result'></label>";
+echo "<label id='perimeter-result'></label>";
 echo "</form>";

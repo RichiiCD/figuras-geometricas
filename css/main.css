@@ -34,6 +34,33 @@ body {
     border: 1px solid black;
 }
 
+.shape:hover {
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+} 
+
 .shape img {
     width: 100%;
+}
+
+
+.shape-form-container {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.shape-form-container input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.shape-form-container input[type="button"] {
+    cursor: pointer;
 }

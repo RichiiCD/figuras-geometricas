@@ -5,27 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
 </head>
 <body>
 
-<!--     <ul>
-        <li><a href="./view/shape_form.php?shape=triangulo">Triangulo</a></li>
-        <li><a href="./view/shape_form.php?shape=rectangulo">Rectangulo</a></li>
-        <li><a href="./view/shape_form.php?shape=cuadrado">Cuadrado</a></li>
-        <li><a href="./view/shape_form.php?shape=circulo">Circulo</a></li>
-    </ul> -->
-
-    <div class="shapes-container">
-        <div class="shape">
+    <div id="shapes-container" class="shapes-container">
+        <div class="shape" name='triangulo'>
             <img src="./img/triangulo.png" alt="">
         </div>
-        <div class="shape">
+        <div class="shape" name='rectangulo'>
             <img src="./img/rectangulo.png" alt="">
         </div>
-        <div class="shape">
+        <div class="shape" name='circulo'>
             <img src="./img/circulo.png" alt="">
         </div>
-        <div class="shape">
+        <div class="shape" name='cuadrado'>
             <img src="./img/cuadrado.png" alt="">
         </div>
     </div>

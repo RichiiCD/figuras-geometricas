@@ -39,7 +39,9 @@ if ($shape_type == 'triangulo') {
     $figura = new Circulo($radio);
 }
 
+$data = [
+    'area' => $figura->area(),
+    'perimeter' => $figura->perimetro()
+];
 
-echo "Area: ". $figura->area();
-echo "<br>";
-echo "Perimetro: ". $figura->perimetro(); 
+echo json_encode($data);
