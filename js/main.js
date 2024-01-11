@@ -41,4 +41,11 @@ window.onload = () => {
             loadShapeForm(element.getAttribute("name"))
         })
     });
+
+
+    document.addEventListener('keypress', (e) => {
+        if (e.key == 'Enter') {
+            e.preventDefault();
+        }
+    })
 }
